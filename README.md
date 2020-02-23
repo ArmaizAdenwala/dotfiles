@@ -26,4 +26,5 @@ _Note: you may need to edit the `Font` to `Roboto Mono for Powerline` under `Pro
 ## Notes
 
 [Notes for nvim / vim commands](NVIM_NOTES.md)
+
 [Notes for iterm commands](ITERM_NOTES.md)
