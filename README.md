@@ -9,3 +9,6 @@ Create a symlink for:
 `nvim`: `ln -s ~/path/to/dotfiles/init.vim ~/.config/nvim/init.vim`
 `zsh`: `ln -s ~/path/to/dotfiles/.zshrc ~/.zshrc`
 
+## Notes
+
+[Notes for nvim / vim commands](NVIM_NOTES.md)
