@@ -10,16 +10,17 @@
 
 `ctrl + w + o` : closes all other windows
 
+
 ## normal mode 
 
 
-
-### switching to insert
+#### switching to insert
 
 * `i` or `a` : switches to insert mode on current line
 * `A` : switches to insert mode at the end of the current line
 
-### movement
+
+#### movement
 
 `k` `up` : move up in a line
 
@@ -49,7 +50,16 @@
 
 `$` : end of line
 
-### editing
+`ctrl + d`: move down 25%
+
+`ctrl + u`: move up 25%
+
+`ctrl + e`: move down a line
+
+`ctrl + y`: move up a line
+
+
+#### editing
 
 `u` : undo
 
