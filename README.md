@@ -1,7 +1,11 @@
-## dotfiles
+# dotfiles
 
-My dotfiles used for `nvim`.
+My dotfiles used for `nvim` and `zsh`.
 
-### Setup
+## Setup
 
-Create a symlink `ln -s ~/path/to/dotfiles/init.vim ~/.config/nvim/init.vim`
+Create a symlink for:
+
+`nvim`: `ln -s ~/path/to/dotfiles/init.vim ~/.config/nvim/init.vim`
+`zsh`: `ln -s ~/path/to/dotfiles/.zshrc ~/.zshrc`
+
