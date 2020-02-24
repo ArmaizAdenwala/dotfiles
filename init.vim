@@ -80,6 +80,7 @@ imap <c-x><c-l> <plug>(fzf-complete-line)
 command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
 
 nnoremap <c-p> :FZF<cr>
+nnoremap <c-g> :Find<cr>
 
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 augroup fzf
