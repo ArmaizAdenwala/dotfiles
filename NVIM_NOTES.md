@@ -69,6 +69,8 @@
 
 `shift + <` tab line to the left
 
+`dd`: remove line
+
 ## nerdtree
 
 `ctrl-n`:  open and close window

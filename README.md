@@ -5,7 +5,11 @@ My dotfiles used for `nvim` and `zsh`.
 ## Setup
 
 ### nvim
-Create symlink: `ln -s ~/path/to/dotfiles/init.vim ~/.config/nvim/init.vim`
+Create symlink: `$ ln -s ~/path/to/dotfiles/init.vim ~/.config/nvim/init.vim`
+
+Create `modules` folder: `$ mkdir ~/.config/nvim/modules`
+
+Create symlink: `$ ln -s ~/code/dotfiles/modules/theme.vim ~/.config/nvim/modules/theme.vim`
 
 ### zsh
 Install `oh-my-zsh`: `$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
