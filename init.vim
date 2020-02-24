@@ -67,6 +67,7 @@ command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-h
 
 nnoremap <c-p> :FZF<cr>
 
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 augroup fzf
   autocmd!
   autocmd! FileType fzf

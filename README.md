@@ -16,6 +16,8 @@ Create `modules` folder: `$ mkdir ~/.config/nvim/modules`
 
 Create symlink: `$ ln -s ~/code/dotfiles/modules/theme.vim ~/.config/nvim/modules/theme.vim`
 
+Install silver searcher: `$ brew install the_silver_searcher`
+
 ### zsh
 Install `oh-my-zsh`: `$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
