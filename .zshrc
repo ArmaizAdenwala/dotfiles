@@ -137,7 +137,7 @@ export PATH="/usr/local/opt/python@4/libexec/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export PATH="~/Library/Python/3.6/bin":$PATH
-
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source "/Users/armaizadenwala/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 source /Users/armaizadenwala/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /Users/armaizadenwala/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

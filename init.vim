@@ -28,6 +28,7 @@ if dein#load_state('~/.cache/dein')
   endif
   call dein#add('scrooloose/nerdtree')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
+  call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
   call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
   call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
   call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
@@ -125,6 +126,17 @@ let g:ale_lint_on_enter = 0
 nmap <silent> <leader>fp <Plug>(ale_fix)
 nmap <silent> <leader>pe <Plug>(ale_previous_wrap)
 nmap <silent> <leader>ne <Plug>(ale_next_wrap)
+
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
+
+let s:orange = 'D4843E'
+let s:red = 'FE405F'
+
+let g:NERDTreePatternMatchHighlightColor = {}
+let g:NERDTreePatternMatchHighlightColor['.*.md|.*config\.js$'] = s:orange
+let g:NERDTreePatternMatchHighlightColor['.*.json$'] = s:red
 
 filetype plugin indent on
 syntax on
