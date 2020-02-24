@@ -5,6 +5,11 @@ My dotfiles used for `nvim` and `zsh`.
 ## Setup
 
 ### nvim
+
+Download `dein`: `curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh`
+
+Install `dein`: `sh ./installer.sh ~/.cache/dein`
+
 Create symlink: `$ ln -s ~/path/to/dotfiles/init.vim ~/.config/nvim/init.vim`
 
 Create `modules` folder: `$ mkdir ~/.config/nvim/modules`
@@ -24,6 +29,8 @@ Create symlink: `$ ln -s ~/path/to/dotfiles/.zshrc ~/.zshrc`
 
 ### iterm
 Import `ArmaizItermConfig.json` to `item > Profiles` and set it to default.
+
+[Install `onedark` theme for iterm2](https://github.com/nathanbuchar/atom-one-dark-terminal)
 
 _Note: you may need to edit the `Font` to `Roboto Mono for Powerline` under `Profiles > text`_
 
