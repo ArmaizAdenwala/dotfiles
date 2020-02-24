@@ -145,8 +145,6 @@ let g:NERDTreePatternMatchHighlightColor['.*.json$'] = s:red
 
 :autocmd CursorMoved * :call gitblame#echo()
 
-:call GitGutterEnable
-
 filetype plugin indent on
 syntax on
 source $HOME/.config/nvim/modules/theme.vim
