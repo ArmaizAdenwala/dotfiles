@@ -75,6 +75,20 @@ augroup fzf
     \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 augroup END
 
+let g:rainbow_active = 1
+
+autocmd VimEnter *
+\   if !argc()
+\ |   Startify
+\ |   NERDTree
+\ |   wincmd w
+\ | endif
+
+let g:indentLine_char = '¦'
+let g:indentLine_enabled = 1
+let g:indentLine_fileTypeExclude = ['help', 'nerdtree', 'startify']
+nmap <silent> <leader>ti :IndentLinesToggle<CR>
+
 filetype plugin indent on
 syntax on
 source $HOME/.config/nvim/modules/theme.vim
