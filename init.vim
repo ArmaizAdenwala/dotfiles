@@ -54,6 +54,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('HerringtonDarkholme/yats.vim')
   call dein#add('leafgarland/typescript-vim')
   call dein#add('zivyangll/git-blame.vim')
+  call dein#add('airblade/vim-gitgutter')
   call dein#end()
   call dein#save_state()
 endif
@@ -142,6 +143,8 @@ let g:NERDTreePatternMatchHighlightColor['.*.md|.*config\.js$'] = s:orange
 let g:NERDTreePatternMatchHighlightColor['.*.json$'] = s:red
 
 :autocmd CursorMoved * :call gitblame#echo()
+
+:call GitGutterEnable
 
 filetype plugin indent on
 syntax on
