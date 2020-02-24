@@ -42,12 +42,14 @@ if dein#load_state('~/.cache/dein')
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('luochen1990/rainbow')
   call dein#add('ap/vim-css-color')
+  call dein#add('dense-analysis/ale')
   call dein#add('ryanoasis/vim-devicons')
   call dein#add('pangloss/vim-javascript', {'lazy': 1, 'on_ft': ['javascript', 'javascript.jsx', 'javascriptreact']})
   call dein#add('othree/jspc.vim', {'lazy': 1, 'on_ft': ['javascript', 'javascript.jsx', 'javascriptreact']})
   call dein#add('othree/javascript-libraries-syntax.vim', {'lazy': 1, 'on_ft': ['javascript', 'javascript.jsx', 'javascriptreact']})
   call dein#add('maxmellon/vim-jsx-pretty', {'lazy': 1, 'on_ft': ['javascript', 'javascript.jsx', 'javascriptreact']})
   call dein#add('HerringtonDarkholme/yats.vim')
+  call dein#add('leafgarland/typescript-vim')
   call dein#end()
   call dein#save_state()
 endif
@@ -116,6 +118,13 @@ nmap <silent>gy <Plug>(coc-type-definition)
 nmap <silent>gi <Plug>(coc-implementation)
 nmap <silent>gr <Plug>(coc-references)
 
+let g:ale_linters = { 'javascript': ['eslint'] }
+let g:ale_sign_column_always = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
+nmap <silent> <leader>fp <Plug>(ale_fix)
+nmap <silent> <leader>pe <Plug>(ale_previous_wrap)
+nmap <silent> <leader>ne <Plug>(ale_next_wrap)
 
 filetype plugin indent on
 syntax on
