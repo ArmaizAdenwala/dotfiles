@@ -8,6 +8,8 @@ set expandtab
 set shiftwidth=2
 set autoindent
 set number
+set ruler
+set colorcolumn=78
 set wildmode=longest,list
 
 if &compatible
