@@ -53,6 +53,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('maxmellon/vim-jsx-pretty', {'lazy': 1, 'on_ft': ['javascript', 'javascript.jsx', 'javascriptreact']})
   call dein#add('HerringtonDarkholme/yats.vim')
   call dein#add('leafgarland/typescript-vim')
+  call dein#add('zivyangll/git-blame.vim')
   call dein#end()
   call dein#save_state()
 endif
@@ -139,6 +140,8 @@ let s:red = 'FE405F'
 let g:NERDTreePatternMatchHighlightColor = {}
 let g:NERDTreePatternMatchHighlightColor['.*.md|.*config\.js$'] = s:orange
 let g:NERDTreePatternMatchHighlightColor['.*.json$'] = s:red
+
+:autocmd CursorMoved * :call gitblame#echo()
 
 filetype plugin indent on
 syntax on
