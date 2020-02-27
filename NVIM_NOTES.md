@@ -70,9 +70,3 @@
 `shift + <` tab line to the left
 
 `dd`: remove line
-
-## nerdtree
-
-`ctrl-n`:  open and close window
-
-`shift + i`: show hidden files

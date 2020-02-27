@@ -14,9 +14,11 @@ Create symlink: `$ ln -s ~/path/to/dotfiles/init.vim ~/.config/nvim/init.vim`
 
 Create `modules` folder: `$ mkdir ~/.config/nvim/modules`
 
-Create symlink: `$ ln -s ~/code/dotfiles/modules/theme.vim ~/.config/nvim/modules/theme.vim`
+Create symlink: `$ ln -s ~/path/to/dotfiles/modules/theme.vim ~/.config/nvim/modules/theme.vim`
 
 Install silver searcher: `$ brew install the_silver_searcher`
+
+Create symlink for `after`: `$ ln -s ~/path/to/dotfiles/after/ ~/.config/nvim/`
 
 ### zsh
 Install `oh-my-zsh`: `$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
@@ -34,7 +36,7 @@ Import `ArmaizItermConfig.json` to `item > Profiles` and set it to default.
 
 [Install `onedark` theme for iterm2](https://github.com/nathanbuchar/atom-one-dark-terminal)
 
-_Note: you may need to edit the `Font` to `Roboto Mono for Powerline` under `Profiles > text`_
+_Note: you may need to edit the `Font` to something with `Nerd` in it to get devicons (located under `Profiles > text`)_
 
 ## Notes
 
@@ -43,3 +45,5 @@ _Note: you may need to edit the `Font` to `Roboto Mono for Powerline` under `Pro
 [Notes for iterm commands](ITERM_NOTES.md)
 
 [Notes for fzf commands](FZF_NOTES.md)
+
+[Notes for nerdtree commands](NERDTREE_NOTES.md)

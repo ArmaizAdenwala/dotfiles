@@ -12,6 +12,12 @@ set ruler
 set colorcolumn=78
 set wildmode=longest,list
 
+set backup
+set backupdir=~/.nvim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupskip=/tmp/*,/private/tmp/*
+set directory=~/.nvim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set writebackup
+
 if &compatible
   set nocompatible
 endif
@@ -125,10 +131,11 @@ nmap <silent>gy <Plug>(coc-type-definition)
 nmap <silent>gi <Plug>(coc-implementation)
 nmap <silent>gr <Plug>(coc-references)
 
-let g:ale_linters = { 'javascript': ['eslint'] }
+let g:ale_linters = { 'javascript': ['eslint', 'prettier'] }
 let g:ale_sign_column_always = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
+let g:ale_fix_on_save = 1
 nmap <silent> <leader>fp <Plug>(ale_fix)
 nmap <silent> <leader>pe <Plug>(ale_previous_wrap)
 nmap <silent> <leader>ne <Plug>(ale_next_wrap)
