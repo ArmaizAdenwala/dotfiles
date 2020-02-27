@@ -18,7 +18,19 @@ Create symlink: `$ ln -s ~/path/to/dotfiles/modules/theme.vim ~/.config/nvim/mod
 
 Install silver searcher: `$ brew install the_silver_searcher`
 
+### nvim linting / formatting
+
 Create symlink for `after`: `$ ln -s ~/path/to/dotfiles/after/ ~/.config/nvim/`
+
+_Note: remove files (ex. python.vim) under `after/` if you do not want to use those settings for that language_
+
+### python dependencies
+
+install `autopep8`: `$ brew install autopep8`
+
+install `yapf`: `$ brew install yapf`
+
+install `flake8`: `$ brew install flake8`
 
 ### zsh
 Install `oh-my-zsh`: `$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
