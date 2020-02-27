@@ -50,6 +50,8 @@ if dein#load_state('~/.cache/dein')
   call dein#add('ntpeters/vim-better-whitespace')
   call dein#add('Yggdroot/indentLine')
   call dein#add('jiangmiao/auto-pairs')
+  call dein#add('honza/vim-snippets')
+  call dein#add('SirVer/ultisnips')
   call dein#add('luochen1990/rainbow')
   call dein#add('ap/vim-css-color')
   call dein#add('dense-analysis/ale')
@@ -63,6 +65,8 @@ if dein#load_state('~/.cache/dein')
   call dein#add('zivyangll/git-blame.vim')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('tpope/vim-commentary')
+  call dein#add('camspiers/animate.vim')
+  call dein#add('camspiers/lens.vim')
   call dein#end()
   call dein#save_state()
 endif
@@ -73,6 +77,17 @@ endif
 
 map <C-n> :NERDTreeToggle<CR>
 " autocmd vimenter * NERDTree
+
+let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
+
+nnoremap <silent> <Up>    :call animate#window_delta_height(10)<CR>
+nnoremap <silent> <Down>  :call animate#window_delta_height(-10)<CR>
+nnoremap <silent> <Left>  :call animate#window_delta_width(10)<CR>
+nnoremap <silent> <Right> :call animate#window_delta_width(-10)<CR>
 
 nnoremap <S-Up> :m-2<CR>
 nnoremap <S-Down> :m+<CR>
