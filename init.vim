@@ -11,6 +11,7 @@ set number
 set ruler
 set colorcolumn=78
 set wildmode=longest,list
+set cmdheight=2
 
 set backup
 set backupdir=~/.nvim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
