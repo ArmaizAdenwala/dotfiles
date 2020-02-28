@@ -10,6 +10,7 @@
 
 `ctrl + w + o` : closes all other windows
 
+`ctrl + l`: redraw scrren / remove highlights
 
 ## normal mode 
 

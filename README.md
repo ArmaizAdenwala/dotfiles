@@ -32,6 +32,8 @@ install `yapf`: `$ brew install yapf`
 
 install `flake8`: `$ brew install flake8`
 
+install `pynvim`: `$ python3 -m pip install --user --upgrade pynvim`
+
 ### zsh
 Install `oh-my-zsh`: `$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
