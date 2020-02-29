@@ -1,4 +1,6 @@
-## windows / panes
+## normal mode 
+
+#### windows / panes
 
 `ctrl + w + w` : switches windows
 
@@ -12,7 +14,8 @@
 
 `ctrl + l`: redraw scrren / remove highlights
 
-## normal mode 
+`up, down, left, right`: resize current window pane
+
 
 
 #### switching to insert
@@ -21,11 +24,20 @@
 * `A` : switches to insert mode at the end of the current line
 
 
+#### switching to visual mode
+
+`v`: shifts to visual mode
+
+`V`: shifts to visual line
+
+`ctrl + v`: shifts to visual block
+
+
 #### movement
 
-`k` `up` : move up in a line
+`k` : move up in a line
 
-`j` `down` : move down a line
+`j`: move down a line
 
 `b` : previous word
 
@@ -66,8 +78,24 @@
 
 `ctrl + r` : redo
 
-`shift + >` tab line to the right
+`>` tab line to the right
 
-`shift + <` tab line to the left
+`<` tab line to the left
 
 `dd`: remove line
+
+`y`: copy
+
+`p`: paste
+
+`gv`: reselect lines
+
+
+## insert mode
+
+`>>`: indent right
+
+`<<`: indent left
+
+
+
