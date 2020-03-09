@@ -66,8 +66,6 @@ if dein#load_state('~/.cache/dein')
   call dein#add('zivyangll/git-blame.vim')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('tpope/vim-commentary')
-  call dein#add('camspiers/animate.vim')
-  call dein#add('camspiers/lens.vim')
   call dein#end()
   call dein#save_state()
 endif
@@ -84,12 +82,6 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
-
-let g:lens#disabled_filetypes = ['nerdtree', 'fzf']
-nnoremap <silent> <Up>    :call animate#window_delta_height(10)<CR>
-nnoremap <silent> <Down>  :call animate#window_delta_height(-10)<CR>
-nnoremap <silent> <Left>  :call animate#window_delta_width(10)<CR>
-nnoremap <silent> <Right> :call animate#window_delta_width(-10)<CR>
 
 nnoremap <S-Up> :m-2<CR>
 nnoremap <S-Down> :m+<CR>
