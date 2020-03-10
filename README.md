@@ -61,3 +61,11 @@ _Note: you may need to edit the `Font` to something with `Nerd` in it to get dev
 [Notes for fzf commands](FZF_NOTES.md)
 
 [Notes for nerdtree commands](NERDTREE_NOTES.md)
+
+
+## Author
+
+Armaiz Adenwala
+
+[Software Engineer Portfolio](https://armaizadenwala.com/)
+
